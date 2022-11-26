@@ -76,26 +76,22 @@
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine();
 
-            int index = 0;
-
             for (int i = 0; i < 32; i++)
             {
-                if (powersOfTwo_TwoDimensional[index,0] < 10)
+                if (powersOfTwo_TwoDimensional[i,0] < 10)
                 {
                     // Add one extra space before the exponent to
                     // align the output
-                    Console.Write($"Exponenet:  {powersOfTwo_TwoDimensional[index, 0]} -- ");
-                    Console.Write(powersOfTwo_TwoDimensional[index, 1]);
+                    Console.Write($"Exponenet:  {powersOfTwo_TwoDimensional[i, 0]} -- ");
+                    Console.Write(powersOfTwo_TwoDimensional[i, 1]);
                     Console.WriteLine();
                 }
                 else
                 {
-                    Console.Write($"Exponenet: {powersOfTwo_TwoDimensional[index, 0]} -- ");
-                    Console.Write(powersOfTwo_TwoDimensional[index, 1]);
+                    Console.Write($"Exponenet: {powersOfTwo_TwoDimensional[i, 0]} -- ");
+                    Console.Write(powersOfTwo_TwoDimensional[i, 1]);
                     Console.WriteLine();
                 }
-
-                index++;
             }
         }
     }
