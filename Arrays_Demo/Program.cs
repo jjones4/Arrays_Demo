@@ -17,7 +17,7 @@ namespace Arrays_Demo
 
             // Instantiate and fill the array with the
             // powers of two
-            ulong[] powersOfTwo_SingleDimensional = new ulong[32];
+            ulong[] powersOfTwo_SingleDimensional = new ulong[10];
 
             for (int i = 0; i < powersOfTwo_SingleDimensional.Length; i++)
             {
@@ -33,20 +33,9 @@ namespace Arrays_Demo
 
             foreach (ulong result in powersOfTwo_SingleDimensional)
             {
-                if (exponenet < 10)
-                {
-                    // Add one extra space before the exponent to
-                    // align the output
-                    Console.Write($"Exponenet:  {exponenet} -- ");
-                    Console.Write(powersOfTwo_SingleDimensional[exponenet]);
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.Write($"Exponenet: {exponenet} -- ");
-                    Console.Write(powersOfTwo_SingleDimensional[exponenet]);
-                    Console.WriteLine();
-                }
+                Console.Write($"Exponenet: {exponenet} -- ");
+                Console.Write(powersOfTwo_SingleDimensional[exponenet]);
+                Console.WriteLine();
 
                 exponenet++;
             }
@@ -65,9 +54,9 @@ namespace Arrays_Demo
 
             // Instantiate and fill the array with the
             // powers of two
-            ulong[,] powersOfTwo_TwoDimensional = new ulong[32, 2];
+            ulong[,] powersOfTwo_TwoDimensional = new ulong[10, 2];
 
-            for (int i = 0; i < 32; i++)
+            for (int i = 0; i < 10; i++)
             {
                 powersOfTwo_TwoDimensional[i, 0] = (ulong)i;
                 powersOfTwo_TwoDimensional[i, 1] = (ulong)Math.Pow(2, i);
@@ -78,22 +67,11 @@ namespace Arrays_Demo
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine();
 
-            for (int i = 0; i < 32; i++)
+            for (int i = 0; i < 10; i++)
             {
-                if (powersOfTwo_TwoDimensional[i,0] < 10)
-                {
-                    // Add one extra space before the exponent to
-                    // align the output
-                    Console.Write($"Exponenet:  {powersOfTwo_TwoDimensional[i, 0]} -- ");
-                    Console.Write(powersOfTwo_TwoDimensional[i, 1]);
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.Write($"Exponenet: {powersOfTwo_TwoDimensional[i, 0]} -- ");
-                    Console.Write(powersOfTwo_TwoDimensional[i, 1]);
-                    Console.WriteLine();
-                }
+                Console.Write($"Exponenet: {powersOfTwo_TwoDimensional[i, 0]} -- ");
+                Console.Write(powersOfTwo_TwoDimensional[i, 1]);
+                Console.WriteLine();
             }
 
             Console.WriteLine();
