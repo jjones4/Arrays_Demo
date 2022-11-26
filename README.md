@@ -1,2 +1,2 @@
 # Arrays_Demo
-Arrays Demonstration
+Examples of arrays in C# to demonstrate proficiency
