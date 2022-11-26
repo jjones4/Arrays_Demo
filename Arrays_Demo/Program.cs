@@ -11,7 +11,7 @@ namespace Arrays_Demo
              * Single-dimensional array
              * 
              * Compute the powers of two with exponents
-             * ranging from 0 to 31
+             * ranging from 0 to 9
              * 
              */
 
@@ -48,7 +48,7 @@ namespace Arrays_Demo
              * Two-dimensional array
              * 
              * Compute the powers of two with exponents
-             * ranging from 0 to 31
+             * ranging from 0 to 9
              * 
              */
 
