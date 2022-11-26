@@ -98,7 +98,6 @@ namespace Arrays_Demo
 
             Console.WriteLine();
 
-
             /*
             * 
             * Jagged array
