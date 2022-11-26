@@ -75,6 +75,7 @@ namespace Arrays_Demo
             }
 
             Console.WriteLine();
+            Console.WriteLine();
 
             /*
             * 
@@ -107,7 +108,7 @@ namespace Arrays_Demo
 
             // Write Pascal's Triangle to the console
             Console.WriteLine("Pascal's Triangle - Jagged Array");
-            Console.WriteLine("--------------------------------------------");
+            Console.WriteLine("--------------------------------");
             Console.WriteLine();
 
             for (int i = 0; i < 10; i++)
