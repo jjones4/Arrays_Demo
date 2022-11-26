@@ -1,4 +1,6 @@
-﻿namespace Arrays_Demo
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Arrays_Demo
 {
     internal class Program
     {
@@ -92,6 +94,69 @@
                     Console.Write(powersOfTwo_TwoDimensional[i, 1]);
                     Console.WriteLine();
                 }
+            }
+
+            Console.WriteLine();
+
+
+            /*
+            * 
+            * Jagged array
+            * 
+            * Build a jagged array where each array in the
+            * jagged array contains the numbers in successive
+            * rows of Pascal's Triangle
+            * 
+            */
+
+            // Instantiate and fill the array with the
+            // arrays of numbers from each row of 
+            // Pascal's Triangle
+            int[][] pascalsTriangle = new int[10][];
+
+            // nCr = n! / ((n - r)! * r!)
+            for (int n = 0; n < 10; n++)
+            {
+                int[] pascalRow = new int[n + 1];
+
+                for (int r = 0; r <= n; r++)
+                {
+                    // nCr = n! / ((n - r)! * r!)
+                    pascalRow[r] = ComputeFactorial(n) / (ComputeFactorial(n - r) * ComputeFactorial(r));
+                }
+
+                pascalsTriangle[n] = pascalRow;
+            }
+
+            // Write Pascal's Triangle to the console
+            Console.WriteLine("Pascal's Triangle - Jagged Array");
+            Console.WriteLine("--------------------------------------------");
+            Console.WriteLine();
+
+            for (int i = 0; i < 10; i++)
+            {
+                foreach (int num in pascalsTriangle[i])
+                {
+                    Console.Write($"{num} ");
+                }
+
+                Console.WriteLine();
+            }
+        }
+
+        static int ComputeFactorial(int n)
+        {
+            if (n == 0)
+            {
+                return 1;
+            }
+            else if (n == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return n * ComputeFactorial(n - 1);
             }
         }
     }
