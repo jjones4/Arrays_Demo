@@ -7,6 +7,7 @@
             /*
              * 
              * Single-dimensional array
+             * 
              * Compute the powers of two with exponents
              * ranging from 0 to 63
              * 
@@ -24,9 +25,26 @@
             // Write the powers of two to the console
             int exponenet = 0;
 
+            Console.WriteLine("Powers of Two");
+            Console.WriteLine("------------------");
+            Console.WriteLine();
+
             foreach (ulong result in powersOfTwo)
             {
-                Console.WriteLine($"Exponenet: {exponenet}: Result: {powersOfTwo[exponenet]}");
+                if(exponenet < 10)
+                {
+                    // Add one extra space before the exponent to
+                    // line up the result column
+                    Console.Write($"Exponenet:  {exponenet} -- ");
+                    Console.Write(powersOfTwo[exponenet]);
+                    Console.WriteLine();
+                }
+                else
+                {
+                    Console.Write($"Exponenet: {exponenet} -- ");
+                    Console.Write(powersOfTwo[exponenet]);
+                    Console.WriteLine();
+                }
 
                 exponenet++;
             }
