@@ -6,6 +6,7 @@ namespace Arrays_Demo
     {
         static void Main(string[] args)
         {
+            Console.WriteLine();
             /*
              * 
              * Single-dimensional array
@@ -25,16 +26,16 @@ namespace Arrays_Demo
             }
 
             // Write the powers of two to the console
-            Console.WriteLine("Powers of Two - From a Single-Dimensional Array");
-            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("   Powers of Two - From a Single-Dimensional Array");
+            Console.WriteLine("   -----------------------------------------------");
             Console.WriteLine();
 
             int exponenet = 0;
 
             foreach (ulong result in powersOfTwo_SingleDimensional)
             {
-                Console.Write($"Exponenet: {exponenet} -- ");
-                Console.Write(powersOfTwo_SingleDimensional[exponenet]);
+                Console.Write($"   Exponenet: {exponenet} -- ");
+                Console.Write($"   {powersOfTwo_SingleDimensional[exponenet]}");
                 Console.WriteLine();
 
                 exponenet++;
@@ -63,14 +64,14 @@ namespace Arrays_Demo
             }
 
             // Write the powers of two to the console
-            Console.WriteLine("Powers of Two - From a Two-Dimensional Array");
-            Console.WriteLine("--------------------------------------------");
+            Console.WriteLine("   Powers of Two - From a Two-Dimensional Array");
+            Console.WriteLine("   --------------------------------------------");
             Console.WriteLine();
 
             for (int i = 0; i < 10; i++)
             {
-                Console.Write($"Exponenet: {powersOfTwo_TwoDimensional[i, 0]} -- ");
-                Console.Write(powersOfTwo_TwoDimensional[i, 1]);
+                Console.Write($"   Exponenet: {powersOfTwo_TwoDimensional[i, 0]} -- ");
+                Console.Write($"   {powersOfTwo_TwoDimensional[i, 1]}");
                 Console.WriteLine();
             }
 
@@ -107,15 +108,15 @@ namespace Arrays_Demo
             }
 
             // Write Pascal's Triangle to the console
-            Console.WriteLine("Pascal's Triangle - Jagged Array");
-            Console.WriteLine("--------------------------------");
+            Console.WriteLine("   Pascal's Triangle - Jagged Array");
+            Console.WriteLine("   --------------------------------");
             Console.WriteLine();
 
             for (int i = 0; i < 10; i++)
             {
                 foreach (int num in pascalsTriangle[i])
                 {
-                    Console.Write($"{num} ");
+                    Console.Write($"   {num} ");
                 }
 
                 Console.WriteLine();
